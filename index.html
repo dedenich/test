@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-stado</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="wrapper">
+      <div class="header__container">
+        <div class="header__logo"></div>
+        <h2 class="header__logo_text">Система комплексного мониторинга 
+          состояния молочных коров</h2>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <div class="wrapper">
+      <div class="main__container">
+        <section class="main__text-container">
+          <p>Ответьте на 3 вопроса и узнайте</p>
+          <h1>Как увеличить удой каждой коровы 
+            до 15% путем</h1>
+          <ul>
+            <li>
+              <div class="li__logo"></div>
+              <div class="li__text">
+                <h3>Своевременного определения половой охоты</h3>
+                <p>особенно если она не заметна по внешним признакам</p>
+              </div>
+            </li>
+            <li>
+              <div class="li__logo"></div>
+              <div class="li__text">
+                <h3>Анализом состояния здоровья коровы</h3>
+                <p>при наблюдении за жвачкой, активностью и температурой тела</p>
+              </div>
+            </li>
+            <li>
+              <div class="li__logo"></div>
+              <div class="li__text">
+                <h3>Выявление хромоты</h3>
+                <p>предупреждением и выявлением развития хромоты</p>
+              </div>
+            </li>
+          </ul>  
+        </section>
+        <section class="main__form-container">
+          <form action="https://formspree.io/key" method="POST">
+            <progress class="form__progress" id="progress" max="2" value="0"></progress>
+            <article class="form__slide_1">
+              <h4>ВОПРОС 1</h4>
+              <p>Сколько у вас <strong>дойных коров?</strong></p>
+              <input type="number" placeholder="Например: 45" name="cows-amount">
+            </article>
+            <article class="form__slide_2">
+              <h4>ВОПРОС 2</h4>
+              <p>Сколько <strong>молока в сутки вы доите?</strong></p>
+              <input type="number" placeholder="Например: 12" name="milk-yield">
+            </article>
+            <article class="form__slide_3">
+              <h4>ВОПРОС 3</h4>
+              <p><strong>Вы являетесь?</strong></p>
+              <label for="ch-3-1">
+                <input type="radio" id="ch-3-1" value="Руководитель фермы" name="position">Руководителем фермы
+              </label>
+              <label for="ch-3-2">
+                <input type="radio" id="ch-3-2" value="Зоотехник" name="position">Зоотехником
+              </label>
+              <label for="ch-3-3">
+                <input type="radio" id="ch-3-3" value="Ветеринар" name="position">Ветеринаром
+              </label>
+            </article>
+            <article class="form__slide_4">
+              <p><strong>Куда прислать вам ответ?</strong></p>
+              <label for="ch-4-1">
+                <input type="radio" id="ch-4-1" value="Телефон" name="connect-via">По телефону
+              </label>
+              <label for="ch-4-2">
+                <input type="radio" id="ch-4-2" value="E-mail" name="connect-via">E-mail
+              </label>
+              <label for="ch-4-3">
+                <input type="radio" id="ch-4-3" value="Viber" name="connect-via">Viber
+              </label>
+              <label for="ch-4-4">
+                <input type="radio" id="ch-4-4" value="Telegram" name="connect-via">Telegram 
+              </label>
+              <label for="ch-4-5">
+                <input type="radio" id="ch-4-5" value="Whatsaap" name="connect-via">Whatsaap
+              </label>
+              <label for="input-tel">
+                Введите ваш номер телефона
+                <input type="tel" name="tel" id="input-tel" placeholder="+375( _ _ ) _ _ _-_ _-_ _">
+              </label>
+              <label for="input-email" hidden>
+                Введите ваш e-mail
+                <input type="email" name="email" id="input-email" placeholder="simple@example.com">
+              </label>
+            </article>
+            <button type="submit">Далее</button>
+          </form>
+        </section>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
