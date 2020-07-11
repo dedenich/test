@@ -50,19 +50,19 @@
         <section class="main__form-container">
           <form action="https://formspree.io/key" method="POST">
             <div class="progress">
-              <progress class="form__progress" id="progress" max="2" value="1"></progress>
+              <progress class="form__progress" id="progress" max="2" value="0"></progress>
             </div>
             <article class="form__slide_1 form__slide">
               <h4>ВОПРОС 1</h4>
               <p>Сколько у вас <strong>дойных коров?</strong></p>
               <input type="number" placeholder="Например: 45" name="cows-amount">
             </article>
-            <article class="form__slide_2 form__slide ">
+            <article class="form__slide_2 form__slide visually-hidden">
               <h4>ВОПРОС 2</h4>
               <p>Сколько <strong>молока в сутки вы доите?</strong></p>
               <input type="number" placeholder="Например: 12" name="milk-yield">
             </article>
-            <article class="form__slide_3 form__slide ">
+            <article class="form__slide_3 form__slide visually-hidden">
               <h4>ВОПРОС 3</h4>
               <p><strong>Вы являетесь?</strong></p>
               <label for="ch-3-1">
@@ -81,9 +81,9 @@
                 Ветеринаром
               </label>
             </article>
-            <article class="form__slide_4 form__slide" >
+            <article class="form__slide_4 form__slide visually-hidden" >
               <p><strong>Куда прислать вам ответ?</strong></p>
-              <div class="label-container">
+              <div class="label-container" id="container">
                 <label for="ch-4-1">
                   <input type="radio" id="ch-4-1" value="Телефон" name="connect-via">
                   <span class="fake-mark"></span>
@@ -110,9 +110,9 @@
                   Whatsaap
                 </label>
               </div>
-              <label for="input-tel" class="">
+              <label for="input-tel">
                 Введите ваш номер телефона
-                <input type="tel" name="tel" id="input-tel" placeholder="+375( _ _ ) _ _ _-_ _-_ _">
+                <input type="tel" name="tel" id="input-tel" placeholder="+375( _ _ ) _ _ _-_ _-_ _" required>
               </label>
               <label for="input-email" class="visually-hidden">
                 Введите ваш e-mail
@@ -126,5 +126,6 @@
     </div>
     <div class="cow"></div>
   </main>
+  <script src="index.js"></script>
 </body>
 </html>

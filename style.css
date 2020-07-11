@@ -33,18 +33,6 @@ html {
   margin: 0 auto;
 }
 
-.visually-hidden {
-	border: 0;
-	clip: rect(0 0 0 0);
-	height: 1px;
-	margin: -1px;
-	overflow: hidden;
-	padding: 0;
-	position: absolute;
-	white-space: nowrap;
-	width: 1px;
-}
-
 body { 
   background-image: url(./asserts/bg.png);
 }
@@ -54,9 +42,9 @@ body {
   background-size: cover;
   width: 532px;
   height: 352px;
-  position: absolute;
+  position: fixed;
   bottom: 0;
-  left: 0;
+  left: 0; 
   z-index: 2;
 }
 
@@ -152,7 +140,6 @@ strong {
 
 .main__form-container .progress progress {
   width: 891px;
-  /* height: 20px; */
   display: block;
   margin: 26px auto;
 }
@@ -328,8 +315,21 @@ strong {
   border: none;
   position: relative;
   left: calc(50% - 50px);
+  bottom: 30px
 }
 
 .main__form-container form button[type="submit"] {
   left: calc(50% - 90px);
+}
+
+.visually-hidden {
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 0px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
 }
