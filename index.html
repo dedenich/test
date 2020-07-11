@@ -21,8 +21,8 @@
       <div class="main__container">
         <section class="main__text-container">
           <p>Ответьте на 3 вопроса и узнайте</p>
-          <h1>Как увеличить удой каждой коровы 
-            до 15% путем</h1>
+          <h1>Как <strong>увеличить удой каждой коровы 
+            до 15% путем</strong></h1>
           <ul>
             <li>
               <div class="li__logo"></div>
@@ -49,61 +49,82 @@
         </section>
         <section class="main__form-container">
           <form action="https://formspree.io/key" method="POST">
-            <progress class="form__progress" id="progress" max="2" value="0"></progress>
-            <article class="form__slide_1">
+            <div class="progress">
+              <progress class="form__progress" id="progress" max="2" value="1"></progress>
+            </div>
+            <article class="form__slide_1 form__slide">
               <h4>ВОПРОС 1</h4>
               <p>Сколько у вас <strong>дойных коров?</strong></p>
               <input type="number" placeholder="Например: 45" name="cows-amount">
             </article>
-            <article class="form__slide_2">
+            <article class="form__slide_2 form__slide ">
               <h4>ВОПРОС 2</h4>
               <p>Сколько <strong>молока в сутки вы доите?</strong></p>
               <input type="number" placeholder="Например: 12" name="milk-yield">
             </article>
-            <article class="form__slide_3">
+            <article class="form__slide_3 form__slide ">
               <h4>ВОПРОС 3</h4>
               <p><strong>Вы являетесь?</strong></p>
               <label for="ch-3-1">
-                <input type="radio" id="ch-3-1" value="Руководитель фермы" name="position">Руководителем фермы
+                <input type="radio" id="ch-3-1" value="Руководитель фермы" name="position">
+                <span class="fake-mark"></span>
+                Руководителем фермы
               </label>
               <label for="ch-3-2">
-                <input type="radio" id="ch-3-2" value="Зоотехник" name="position">Зоотехником
+                <input type="radio" id="ch-3-2" value="Зоотехник" name="position">
+                <span class="fake-mark"></span>
+                Зоотехником
               </label>
               <label for="ch-3-3">
-                <input type="radio" id="ch-3-3" value="Ветеринар" name="position">Ветеринаром
+                <input type="radio" id="ch-3-3" value="Ветеринар" name="position">
+                <span class="fake-mark"></span>
+                Ветеринаром
               </label>
             </article>
-            <article class="form__slide_4">
+            <article class="form__slide_4 form__slide" >
               <p><strong>Куда прислать вам ответ?</strong></p>
-              <label for="ch-4-1">
-                <input type="radio" id="ch-4-1" value="Телефон" name="connect-via">По телефону
-              </label>
-              <label for="ch-4-2">
-                <input type="radio" id="ch-4-2" value="E-mail" name="connect-via">E-mail
-              </label>
-              <label for="ch-4-3">
-                <input type="radio" id="ch-4-3" value="Viber" name="connect-via">Viber
-              </label>
-              <label for="ch-4-4">
-                <input type="radio" id="ch-4-4" value="Telegram" name="connect-via">Telegram 
-              </label>
-              <label for="ch-4-5">
-                <input type="radio" id="ch-4-5" value="Whatsaap" name="connect-via">Whatsaap
-              </label>
-              <label for="input-tel">
+              <div class="label-container">
+                <label for="ch-4-1">
+                  <input type="radio" id="ch-4-1" value="Телефон" name="connect-via">
+                  <span class="fake-mark"></span>
+                  По телефону
+                </label>
+                <label for="ch-4-2">
+                  <input type="radio" id="ch-4-2" value="E-mail" name="connect-via">
+                  <span class="fake-mark"></span>
+                  E-mail
+                </label>
+                <label for="ch-4-3">
+                  <input type="radio" id="ch-4-3" value="Viber" name="connect-via">
+                  <span class="fake-mark"></span>
+                  Viber
+                </label>
+                <label for="ch-4-4">
+                  <input type="radio" id="ch-4-4" value="Telegram" name="connect-via">
+                  <span class="fake-mark"></span>
+                  Telegram 
+                </label>
+                <label for="ch-4-5">
+                  <input type="radio" id="ch-4-5" value="Whatsaap" name="connect-via">
+                  <span class="fake-mark"></span>
+                  Whatsaap
+                </label>
+              </div>
+              <label for="input-tel" class="">
                 Введите ваш номер телефона
                 <input type="tel" name="tel" id="input-tel" placeholder="+375( _ _ ) _ _ _-_ _-_ _">
               </label>
-              <label for="input-email" hidden>
+              <label for="input-email" class="visually-hidden">
                 Введите ваш e-mail
                 <input type="email" name="email" id="input-email" placeholder="simple@example.com">
               </label>
             </article>
-            <button type="submit">Далее</button>
+            <button type="button" id="form-button">Далее</button>
           </form>
         </section>
       </div>
     </div>
+    <div class="cow"></div>
   </main>
 </body>
 </html>
