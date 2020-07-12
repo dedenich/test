@@ -18,7 +18,7 @@ const telBlock = document.querySelector('label[for="input-tel"]');
 const emailBlock = document.querySelector('label[for="input-email"]');
 
 const updateProgress = () => {
-  progress.setAttribute("value", getStep());
+  progress.setAttribute('value', getStep());
 }
 
 const changeSlide = () => {
@@ -29,7 +29,7 @@ const changeSlide = () => {
 }
 
 const updateButton = () => {
-  button.textContent = "Отправить и получить ответ";
+  button.textContent = 'Отправить и получить ответ';
   button.setAttribute('type', 'submit');
 }
 
@@ -39,7 +39,6 @@ button.addEventListener('click', () => {
   } else if (getStep() < (slides.length - 1)) {
     updateButton();
     changeSlide();
-    console.log(document.getElementById('ch-4-2'));
   };
 });
 
